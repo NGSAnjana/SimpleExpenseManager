@@ -22,7 +22,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL();
+        sqLiteDatabase.execSQL("create table" + accountsTable + "(accountNumber INTEGER Primary Key Autoincrement, bankName text, accountHolderName text, balance integer)" ";
         
     }
 
